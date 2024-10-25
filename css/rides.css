@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(45deg, #000, #333);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #bf0000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo h1:hover {
+    transform: scale(1.1);
+}
+
+nav .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-list li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s, background 0.3s;
+    border-radius: 5px;
+}
+
+nav .nav-list li a:hover {
+    color: #bf0000;
+    background-color: rgba(255, 127, 0, 0.1);
+}
+
+
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    background-color: #222;
+}
+
+.hero-section .card {
+    text-align: center;
+    width: 30%;
+}
+
+.hero-section .card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-section .card h2 {
+    margin: 15px 0;
+    font-size: 22px;
+    color: #f0a500;
+}
+
+/* Rides Section */
+.rides-section {
+    padding: 40px 20px;
+}
+
+.rides-section .section-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f0a500;
+}
+
+.rides-section .rides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.rides-section .ride-card {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.rides-section .ride-card:hover {
+    transform: scale(1.05);
+}
+
+.rides-section .ride-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.rides-section .ride-card h3 {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #f0a500;
+}
+
+.rides-section .ride-card p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Ride Experience Section */
+.ride-experience {
+    padding: 40px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.ride-experience p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #aaa;
+}

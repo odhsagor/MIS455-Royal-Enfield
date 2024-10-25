@@ -5,48 +5,61 @@
     box-sizing: border-box;
 }
 
-/* Body Settings */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f0f0f0;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Header Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Section */
 header {
-    background-color: #000;
-    color: white;
-    padding: 20px;
+    background: linear-gradient(45deg, #000, #333);
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-header .logo h1:hover {
-    color: #ffffff;
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #bf0000;
+    transition: transform 0.3s ease-in-out;
 }
 
-header .logo h1 {
-    font-size: 2em;
-    color: #ff0000;
+.logo h1:hover {
+    transform: scale(1.1);
 }
 
-.nav-list {
+nav .nav-list {
     list-style: none;
     display: flex;
+    gap: 20px;
 }
 
-.nav-list li {
-    margin-left: 20px;
+nav .nav-list li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s, background 0.3s;
+    border-radius: 5px;
 }
 
-.nav-list li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-.nav-list li a:hover {
-    color: #ff0000; /* Red color on hover */
+nav .nav-list li a:hover {
+    color: #bf0000;
+    background-color: rgba(255, 127, 0, 0.1);
 }
 
 /* Main Container */
@@ -132,6 +145,14 @@ header .logo h1 {
 
 .explore-btn:hover, .test-ride-btn:hover {
     background-color: #333;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #aaa;
 }
 
 /* Responsive Styles */

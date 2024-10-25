@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(45deg, #000, #333);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #bf0000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo h1:hover {
+    transform: scale(1.1);
+}
+
+nav .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-list li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s, background 0.3s;
+    border-radius: 5px;
+}
+
+nav .nav-list li a:hover {
+    color: #bf0000;
+    background-color: rgba(255, 127, 0, 0.1);
+}
+
+
+/* Service Locator Section */
+.service-locator-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.locator-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.locator-container {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.locator-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #f0a500;
+}
+
+.locator-container p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.locator-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.locator-form select {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.no-service-message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #f0a500;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #aaa;
+}
+
